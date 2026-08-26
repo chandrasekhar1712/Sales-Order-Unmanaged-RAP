@@ -66,27 +66,36 @@ This project demonstrates how to build a complete RAP application for managing *
                                   │
                                   ▼
                          Fiori Elements UI
+```
 
-✨ Features
-Create Sales Order
-Display Sales Orders
-Update Sales Order
-Delete Sales Order
-Create Sales Order Items
-Display Sales Order Items
-Update Sales Order Items
-Delete Sales Order Items
-Header and Item composition
-Duplicate Sales Order validation
-Duplicate Sales Item validation
-Unmanaged RAP behavior
-Custom transactional buffer
-Custom saver implementation
-CDS-based data modeling
-Fiori Elements user interface
-OData V4 service exposure
-Git version control using abapGit
-📂 RAP Project Structure
+---
+
+## ✨ Features
+
+- Create Sales Order
+- Display Sales Orders
+- Update Sales Order
+- Delete Sales Order
+- Create Sales Order Items
+- Display Sales Order Items
+- Update Sales Order Items
+- Delete Sales Order Items
+- Header and Item composition
+- Duplicate Sales Order validation
+- Duplicate Sales Item validation
+- Unmanaged RAP behavior
+- Custom transactional buffer
+- Custom saver implementation
+- CDS-based data modeling
+- Fiori Elements user interface
+- OData V4 service exposure
+- Git version control using abapGit
+
+---
+
+## 📂 RAP Project Structure
+
+```text
 ZSALES_ORDER_RAP_01
 │
 ├── Sales Order Header Database Table
@@ -109,14 +118,19 @@ ZSALES_ORDER_RAP_01
 ├── Projection Behavior Definition
 ├── Service Definition
 └── Service Binding
-🔎 Business Validation
+```
+
+---
+
+## 🔎 Business Validation
 
 The application contains duplicate validation for Sales Orders and Sales Order Items.
 
-Sales Order Duplicate Validation
+### Sales Order Duplicate Validation
 
 When creating a Sales Order, the application checks whether the Sales Document already exists.
 
+```text
 Sales Document
       │
       ▼
@@ -134,27 +148,33 @@ Message Sales Order
    │
    ▼
 "Duplicate Sales Order"
-Sales Item Duplicate Validation
+```
+
+### Sales Item Duplicate Validation
 
 Sales Order Items are checked using the combination of:
 
-Sales Document
-       +
-Sales Item Number
+- Sales Document
+- Sales Item Number
 
 If the combination already exists, the application rejects the creation with a duplicate item error.
 
-⚙️ Unmanaged RAP Implementation
+---
+
+## ⚙️ Unmanaged RAP Implementation
 
 Unlike the Managed RAP scenario, database operations are manually implemented in this project.
 
 The application uses:
 
-Behavior Handler Classes
-Custom Transactional Buffer
-Saver Class
-Manual MODIFY and DELETE database operations
-Transaction Flow
+- Behavior Handler Classes
+- Custom Transactional Buffer
+- Saver Class
+- Manual `MODIFY` and `DELETE` database operations
+
+### Transaction Flow
+
+```text
 Fiori Elements
       │
       ▼
@@ -168,68 +188,80 @@ Saver Class
       │
       ▼
 Database Tables
+```
 
 The transactional buffer temporarily stores changes during the RAP transaction, while the Saver Class performs the final database operations during save processing.
 
-📸 Screenshots
-Sales Order Unmanaged RAP Application
+---
 
-Sales Order Header
+## 📸 Screenshots
 
-Sales Order Items
+- Sales Order Unmanaged RAP Application
+- Sales Order Header
+- Sales Order Items
+- Sales Order Creation
+- RAP Application in Eclipse ADT
+- Sales Order Project
 
-Sales Order Creation
+---
 
-RAP Application in Eclipse ADT
+## 🚀 Development Environment
 
-Sales Order Project
+| Component | Technology |
+|---|---|
+| IDE | Eclipse with ABAP Development Tools |
+| Platform | SAP ABAP Cloud |
+| Application Model | Unmanaged RAP |
+| Data Modeling | ABAP CDS |
+| UI | Fiori Elements |
+| Service | OData V4 |
+| Version Control | Git / abapGit |
+| Repository | GitHub |
+| Package | ZSALES_ORDER_RAP_01 |
 
-🚀 Development Environment
-Component	Technology
-IDE	Eclipse with ABAP Development Tools
-Platform	SAP ABAP Cloud
-Application Model	Unmanaged RAP
-Data Modeling	ABAP CDS
-UI	Fiori Elements
-Service	OData V4
-Version Control	Git / abapGit
-Repository	GitHub
-Package	ZSALES_ORDER_RAP_01
-📚 Key Concepts Practiced
+---
+
+## 📚 Key Concepts Practiced
 
 Through this project, I practiced:
 
-Modern ABAP
-ABAP Cloud
-CDS View Entities
-RAP Architecture
-Unmanaged RAP
-Root and Child Entities
-Composition and Association
-Behavior Definitions
-Behavior Handler Classes
-CRUD Operations
-Transactional Buffer
-Saver Class
-Database Operations
-Business Validations
-Metadata Extensions
-Service Definition
-Service Binding
-OData V4
-Fiori Elements
-abapGit
-GitHub Version Control
-🎯 Learning Objective
+- Modern ABAP
+- ABAP Cloud
+- CDS View Entities
+- RAP Architecture
+- Unmanaged RAP
+- Root and Child Entities
+- Composition and Association
+- Behavior Definitions
+- Behavior Handler Classes
+- CRUD Operations
+- Transactional Buffer
+- Saver Class
+- Database Operations
+- Business Validations
+- Metadata Extensions
+- Service Definition
+- Service Binding
+- OData V4
+- Fiori Elements
+- abapGit
+- GitHub Version Control
+
+---
+
+## 🎯 Learning Objective
 
 The main objective of this project was to gain practical hands-on experience in developing a Sales Order Management Application using the SAP ABAP RESTful Application Programming Model with the Unmanaged Scenario.
 
 The project demonstrates how custom business logic, database operations, validations, transactional buffering, behavior implementation, service exposure, and Fiori Elements UI can be integrated into a complete RAP application.
 
-🔄 Git & Version Control
+---
+
+## 🔄 Git & Version Control
 
 The RAP development objects were version-controlled using abapGit and pushed from Eclipse ADT to GitHub.
 
+```text
 Eclipse ADT
     │
     ▼
@@ -246,7 +278,13 @@ Git Repository
     │
     ▼
 GitHub
-📁 Repository Structure
+```
+
+---
+
+## 📁 Repository Structure
+
+```text
 Sales-Order-Unmanaged-RAP
 │
 ├── sales-order-unmanaged-rap/
@@ -262,13 +300,17 @@ Sales-Order-Unmanaged-RAP
 │
 ├── .abapgit.xml
 └── README.md
-🔗 Repository
+```
 
-GitHub:
-https://github.com/chandrasekhar1712/Sales-Order-Unmanaged-RAP
+---
 
-👨‍💻 Author
+## 🔗 Repository
 
-Thappita Chandrasekhar
+GitHub: [Sales-Order-Unmanaged-RAP](https://github.com/chandrasekhar1712/Sales-Order-Unmanaged-RAP)
 
+---
+
+## 👨‍💻 Author
+
+**Thappita Chandrasekhar**
 B.Tech – Computer Science and Engineering
