@@ -1,0 +1,5 @@
+@EndUserText.label: 'Sales Service Definition - Unmanged'
+define service ZSO_SALES_UMG_UI {
+  expose ZSO_SALESHDR_UMG_C;
+  expose ZSO_SALESITM_UMG_C;
+}

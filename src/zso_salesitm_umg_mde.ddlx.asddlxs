@@ -1,0 +1,51 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: {
+  typeName: 'Sales Item',
+  typeNamePlural: 'Sales Items',
+  title:{ type: #STANDARD,
+    label: 'Sales Item',
+    value: 'SalesItemnumber' } }}
+
+annotate entity ZSO_SALESITM_UMG_C with
+{
+  @UI.facet: [{
+    id: 'SalesItems', purpose: #STANDARD, type: #IDENTIFICATION_REFERENCE,
+    label: 'Sales Item Details', position: 10
+  }]
+
+  @UI:{ lineItem: [ { position: 10, label: 'Sales Document' } ],
+        identification: [{ position: 10, label: 'Sales Document' }] }
+  SalesDocument;
+
+  @EndUserText.label : 'Sales Item'
+  @UI:{ lineItem:[ { position: 20, label: 'Sales Item'} ],
+        identification:[{ position: 20, label: 'Sales Item' }] }
+  SalesItemnumber;
+
+  @UI:{ lineItem:[{ position: 30, label:'Material'}],
+        identification:[{ position: 30, label:'Material' }] }
+  Material;
+
+  @UI:{ lineItem:[{ position: 40, label:'Plant'} ],
+        identification:[{ position: 40, label:'Plant'}] }
+  Plant;
+
+  @UI:{ lineItem:[{ position: 50, label: 'Quantity'}],
+        identification:[{ position: 50, label:'Quantity'}]}
+  Quantity;
+
+  @UI.hidden:true
+  Quantityunits;
+
+  @UI.hidden:true
+  LocalCreatedBy;
+
+  @UI.hidden:true
+  LocalCreatedAt;
+
+  @UI.hidden:true
+  LocalLastChangedBy;
+
+  @UI.hidden:true
+  LocalLastChangedAt;
+}
