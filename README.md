@@ -197,6 +197,10 @@ The transactional buffer temporarily stores changes during the RAP transaction, 
 ## 📸 Screenshots
 
 ### Sales Order Unmanaged RAP Application
+
+### RAP Application in Eclipse ADT
+![RAP Application in Eclipse ADT](sales-order-unmanaged-rap/Screenshot%202026-08-26%20202357.png)
+
 ![Sales Order Unmanaged RAP Application](sales-order-unmanaged-rap/Screenshot%202026-08-26%20135234.png)
 
 ### Sales Order Header
@@ -208,11 +212,6 @@ The transactional buffer temporarily stores changes during the RAP transaction, 
 ### Sales Order Creation
 ![Sales Order Creation](sales-order-unmanaged-rap/Screenshot%202026-08-26%20135602.png)
 
-### RAP Application in Eclipse ADT
-![RAP Application in Eclipse ADT](sales-order-unmanaged-rap/Screenshot%202026-08-26%20202357.png)
-
-### Sales Order Project
-![Sales Order Project](sales-order-unmanaged-rap/Screenshot%202026-08-26%20203439.png)
 
 ---
 
