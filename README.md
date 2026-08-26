@@ -67,8 +67,7 @@ This project demonstrates how to build a complete RAP application for managing *
                                   ▼
                          Fiori Elements UI
 
-
-        ✨ Features
+✨ Features
 Create Sales Order
 Display Sales Orders
 Update Sales Order
@@ -140,6 +139,7 @@ Sales Item Duplicate Validation
 Sales Order Items are checked using the combination of:
 
 Sales Document
+       +
 Sales Item Number
 
 If the combination already exists, the application rejects the creation with a duplicate item error.
@@ -272,4 +272,3 @@ https://github.com/chandrasekhar1712/Sales-Order-Unmanaged-RAP
 Thappita Chandrasekhar
 
 B.Tech – Computer Science and Engineering
-
